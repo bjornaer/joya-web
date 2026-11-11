@@ -1,0 +1,18 @@
+/* Joya legal pages: same palette as schlk.in, Joya purple as accent. */
+:root { --bg:#0b0d12; --surface:#12151d; --border:#232837; --text:#e6e8ee; --muted:#8a91a5; --accent:#c9a0e8; color-scheme:dark light; }
+@media (prefers-color-scheme: light) { :root { --bg:#f7f8fb; --surface:#fff; --border:#e3e6ee; --text:#141722; --muted:#5c6378; --accent:#7a3e9d; } }
+* { box-sizing:border-box; }
+body { margin:0; font:16px/1.65 Inter, system-ui, sans-serif; background:var(--bg); color:var(--text); }
+main { max-width:720px; margin:0 auto; padding:48px 16px 80px; }
+header { display:flex; justify-content:space-between; align-items:baseline; gap:16px; margin-bottom:32px; }
+.brand { font-weight:800; font-size:1.4rem; color:var(--accent); text-decoration:none; }
+.lang a { color:var(--muted); margin-left:8px; text-decoration:none; } .lang a[aria-current] { color:var(--text); font-weight:600; }
+h1 { font-size:2rem; line-height:1.2; margin:0 0 8px; } h2 { font-size:1.15rem; margin:36px 0 8px; }
+.updated { color:var(--muted); margin:0 0 24px; }
+a { color:var(--accent); }
+.box { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px 20px; margin:16px 0; }
+ul, ol { padding-left:1.3em; } li { margin:4px 0; }
+footer { margin-top:48px; color:var(--muted); font-size:.9rem; }
+.hero { display:flex; align-items:center; gap:20px; margin:24px 0 8px; } .hero img { width:72px; height:72px; }
+.tagline { font-size:1.2rem; color:var(--muted); margin:0 0 24px; }
+.features li { margin:8px 0; }
